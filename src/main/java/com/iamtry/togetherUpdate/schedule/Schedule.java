@@ -26,8 +26,7 @@ public class Schedule {
     // 1000ms => 1sec, 60000ms => 60sec => 1min,
     // 5분 간격 => 1000 * 60 * 5
     @Scheduled(fixedDelay = 1000 * 60 * 5)
-//    @Scheduled(fixedDelay = 1000)
-    public void job() {
+     public void job() {
         chosunController.chosunPolitics();
         chosunController.chosunNational();
         chosunController.chosunInternational();
@@ -62,7 +61,7 @@ public class Schedule {
         joongAngController.joongangEntertainments();
         joongAngController.joongangIt();
 
-        // TODO: 2022/05/15 경향신문 rss 요청시 error 발생 (네트워크 문제인지 rss 요청 자체 문제인지 확인 필요 
+        // TODO: 2022/05/15 경향신문 rss 요청시 error 발생 (네트워크 문제인지 rss 요청 자체 문제인지 확인 필요
 //        kyunghyangController.kyunghyangPolitics();
 //        kyunghyangController.kyunghyangEconomy();
 //        kyunghyangController.kyunghyangNational();

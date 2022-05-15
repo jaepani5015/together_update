@@ -86,7 +86,7 @@ public class RequestRss {
             case HANKYOREH:
                 List<Hankyoreh> hankyorehList = Hankyoreh.createListOfHankyoreh(newsFormList);
                 for (Hankyoreh hankyoreh : hankyorehList) {
-                    DongA byTitle = dongARepository.findByTitle(hankyoreh.getTitle());
+                    Hankyoreh byTitle = hankyorehRepository.findByTitle(hankyoreh.getTitle());
                     if (byTitle == null) {
                         hankyorehRepository.save(hankyoreh);
                     }
@@ -95,7 +95,7 @@ public class RequestRss {
             case JOONGANG:
                 List<JoongAng> joongAngList = JoongAng.createListOfJoongAng(newsFormList);
                 for (JoongAng joongAng : joongAngList) {
-                    DongA byTitle = dongARepository.findByTitle(joongAng.getTitle());
+                    JoongAng byTitle = joongAnghRepository.findByTitle(joongAng.getTitle());
                     if (byTitle == null) {
                         joongAnghRepository.save(joongAng);
                     }
@@ -104,7 +104,7 @@ public class RequestRss {
             case KYUNGHYANG:
                 List<Kyunghyang> kyunghyangList = Kyunghyang.createListOfKyunghyang(newsFormList);
                 for (Kyunghyang kyunghyang : kyunghyangList) {
-                    DongA byTitle = dongARepository.findByTitle(kyunghyang.getTitle());
+                    Kyunghyang byTitle = kyunghyangRepository.findByTitle(kyunghyang.getTitle());
                     if (byTitle == null) {
                         kyunghyangRepository.save(kyunghyang);
                     }
