@@ -62,8 +62,9 @@ public class Schedule {
         joongAngController.joongangEntertainments();
         joongAngController.joongangIt();
 
+        // TODO: 2022/05/15 경향신문 rss 요청시 error 발생 (네트워크 문제인지 rss 요청 자체 문제인지 확인 필요 
 //        kyunghyangController.kyunghyangPolitics();
-//         kyunghyangController.kyunghyangEconomy();
+//        kyunghyangController.kyunghyangEconomy();
 //        kyunghyangController.kyunghyangNational();
 //        kyunghyangController.kyunghyangInternational();
 //        kyunghyangController.kyunghyangCulture();
