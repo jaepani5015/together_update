@@ -1,5 +1,5 @@
-GET http://localhost:8080/test
+###
+GET http://localhost:8080/v1/chosunnews/politics
 
 ###
-
-GET http://localhost:8080/getnews
+GET http://localhost:8080/v1/donganews/politics
